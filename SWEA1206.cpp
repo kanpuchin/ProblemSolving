@@ -4,9 +4,11 @@
             STL max 함수 대신 MAX 매크로 정의해서 사용
             =>  메모리 12,540 kb -> 12,544 kb
                 실행시간 30 ms -> 8 ms
+            iostream의 cin, cout 대신 stdio.h의 scanf, printf 사용
+            =>  실행시간 8ms -> 7 ms
 */
 
-#include <iostream>
+#include <stdio.h>
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 int main(){
@@ -14,9 +16,9 @@ int main(){
     int length;
     freopen("input.txt","r",stdin);
     for(int i=1; i<=10; i++){
-        std::cin>>length;
+        scanf("%d ", &length);
         for(int j=0; j<length; j++)
-            std::cin>>arr[j];
+            scanf("%d ", &arr[j]);
         int view = 0;
         int cmp, clear;
         for(int i=2; i<length-2; i++){
