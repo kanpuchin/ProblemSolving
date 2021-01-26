@@ -2,7 +2,7 @@
     210116: PASS
     210125: 함수 삭제, for문 내 알고리즘 삽입
             STL max 함수 대신 MAX 매크로 정의해서 사용
-            =>  메모리 12,540 kb -> 12,544 kb
+            =>  메모리 12,544 kb -> 12,540 kb
                 실행시간 30 ms -> 8 ms
             iostream의 cin, cout 대신 stdio.h의 scanf, printf 사용
             =>  실행시간 8ms -> 7 ms
