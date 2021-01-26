@@ -16,7 +16,6 @@
             (메모리 할당 상태에 따라 다른듯)
 */
 
-#include <cmath>
 #include <algorithm>
 #include <stdio.h>
 #define SWAP(a,b) a^=b; b^=a; a^=b;
